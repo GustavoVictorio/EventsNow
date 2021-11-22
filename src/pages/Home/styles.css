@@ -1,25 +1,27 @@
-.container {
+.container-h {
     max-width: 100%;
     margin-top: 20px;
-}
+   }
 
-.container .content {
+.container-h .content-h {
     max-width: 1200px;
     margin: 0 auto;
+   
 }
 
-.container .content .title {
+.container-h .content-h .title {
     margin-bottom: 20px;
 }
 
-.container .content .info {
+.container-h .content-h .info {
     width: 50%;
     font-size: 18px;
     line-height: 1.2;
 }
 
-.container .content .btn {
+.container-h .content-h .btn {
     margin-top: 20px;
+    margin-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
     width: 150px;
@@ -30,7 +32,7 @@
     background: var(--purple);
 }
 
-.container .content a {
+.container-h .content-h a {
     text-decoration: none;
     color: var(--white);
     font-size: 20px;

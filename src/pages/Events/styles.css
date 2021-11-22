@@ -1,0 +1,35 @@
+.container-e {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.container-e .content-e {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-e .content-e .card-info {
+    padding: 10px 0 5px 0;
+    max-width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.container-e .content-e .card-info p {
+    width: 100%;
+    margin-bottom: 4px
+}
+
+.container-e .content-e .card-info span {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    border-bottom: 2px solid var(--blue);
+}
+
+.container-e .content-e .card-info a {
+    text-decoration: none;
+    color: var(--red);
+}

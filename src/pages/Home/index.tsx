@@ -1,9 +1,10 @@
-import "./styles.css";
+import './styles.css';
+
 
 export default function Home() {
     return (
-        <div className="container">
-            <div className="content">
+        <div className="container-h">
+            <div className="content-h">
                 <div className="title">
                     <h1>EventsNow</h1>
                 </div>
