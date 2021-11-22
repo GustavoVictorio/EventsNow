@@ -9,17 +9,16 @@
 }
 
 .container-footer .content-footer {
-    width: 1200px;
+    max-width: 1200px;
     height: 200px;
     margin: 0 auto;
-    border: 1px solid;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-.container-footer .content-footer span{
+.container-footer .content-footer span {
     color: var(--white);
     font-size: 16px;
 }

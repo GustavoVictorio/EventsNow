@@ -3,8 +3,8 @@ import imgLogo from 'assets/img/logo.png';
 
 export default function Header() {
     return (
-        <div className="container">
-            <div className="content">
+        <div className="container-header">
+            <div className="content-header">
                 <div className="logo">
                     <img src={imgLogo} alt="Logo" />
                 </div>
