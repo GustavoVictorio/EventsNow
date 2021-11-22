@@ -1,8 +1,15 @@
+import Footer from "components/Footer";
+import Header from "components/Header";
+import Routess from "Routes";
+import './styles/global.css';
+
 function App() {
   return (
-    <div>
-      <h1>EventsNow</h1>
-    </div>
+    <>
+      <Header />
+      <Routess />
+      <Footer />
+    </>
   );
 }
 

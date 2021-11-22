@@ -1,0 +1,38 @@
+.container {
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--purple);
+}
+
+.container .content {
+    width: 1200px;
+    height: 150px;
+    margin: 0 auto;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container .content .logo {
+    width: 300px;
+}
+
+.container .content .logo img {
+    width: 100%;
+}
+
+.container .content ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .content ul li a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 24px;
+    color: var(--white);
+}
+
