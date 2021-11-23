@@ -1,0 +1,85 @@
+.container-d {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.container-d .content-d {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-d .content-d h1 {
+    min-width: 100%;
+    margin-bottom: 20px;
+}
+
+.info-d {
+    width: 50%;
+    font-size: 18px;
+}
+
+.info-d p {
+    margin-bottom: 4px;
+}
+
+.info-d span {
+    font-weight: bold;
+}
+
+.detail-d {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.buy {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.buy .value {
+
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.buy span {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: var(--blue);
+    cursor: pointer;
+}
+
+.buy input {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn-buy {
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    background: var(--purple);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--white);
+}
