@@ -6,6 +6,7 @@ export default function Details() {
             <div className="content-d">
                 <h1>Evento X</h1>
                 <div className="info-d">
+                    <p><span>Realizado por: </span>Empresa A</p>
                     <p><span>Local: </span>Rua A</p>
                     <p><span>Data: </span>06/12/2021</p>
                     <p><span>Hora: </span>08:00</p>

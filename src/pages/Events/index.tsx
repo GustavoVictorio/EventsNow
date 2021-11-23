@@ -9,7 +9,7 @@ export default function Events() {
                         Evento X
                     </p>
                     <p>
-                        Online
+                        Empresa X
                     </p>
                     <span>
                         <a href="/detalhes">
@@ -22,7 +22,7 @@ export default function Events() {
                         Evento Y
                     </p>
                     <p>
-                        Presencial
+                        Universidade Y
                     </p>
                     <span>
                         <a href="/detalhes">
@@ -35,7 +35,7 @@ export default function Events() {
                         Evento A
                     </p>
                     <p>
-                        Presencial
+                        Universidade A
                     </p>
                     <span>
                         <a href="/detalhes">
@@ -48,7 +48,7 @@ export default function Events() {
                         Evento B
                     </p>
                     <p>
-                        Online
+                        Empresa B
                     </p>
                     <span>
                         <a href="/detalhes">
@@ -61,7 +61,7 @@ export default function Events() {
                         Evento K
                     </p>
                     <p>
-                        Online
+                        Universidade K
                     </p>
                     <span>
                         <a href="/detalhes">
