@@ -9,7 +9,7 @@
             "hour": "07:00",
             "costume": "Social",
             "parking": "30.00",
-            "price": "180.00",
+            "price": 180.00,
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
         },
         {
@@ -21,7 +21,7 @@
             "hour": "06:00",
             "costume": "Casual",
             "parking": "Gratis",
-            "price": "60.00",
+            "price": 60.00,
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
         },
         {
@@ -33,7 +33,7 @@
             "hour": "08:00",
             "costume": "Social",
             "parking": "15.00",
-            "price": "30.00",
+            "price": 30.00,
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
         },
         {
@@ -45,7 +45,7 @@
             "hour": "07:00",
             "costume": "Casual",
             "parking": "Gratis",
-            "price": "100.00",
+            "price": 100.00,
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
         },
         {
@@ -57,7 +57,7 @@
             "hour": "05:00",
             "costume": "Casual",
             "parking": "25.00",
-            "price": "80.00",
+            "price": 80.00,
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
         }
     ]

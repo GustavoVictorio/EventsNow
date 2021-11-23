@@ -1,74 +1,38 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import { Event } from 'types/event';
+import { BASE_URL } from 'util/request';
 import './styles.css'
 
 export default function Events() {
+
+    const [events, setEvents] = useState<Event[]>();
+
+    useEffect(() => {
+        axios.get(`${BASE_URL}/events`).then(response => {
+            setEvents(response.data);
+
+        });
+    }, []);
+
     return (
         <div className="container-e">
             <div className="content-e">
-                <div className="card-info">
-                    <p>
-                        Evento X
-                    </p>
-                    <p>
-                        Empresa X
-                    </p>
-                    <span>
-                        <a href="/detalhes">
-                            Saiba mais
-                        </a>
-                    </span>
-                </div>
-                <div className="card-info">
-                    <p>
-                        Evento Y
-                    </p>
-                    <p>
-                        Universidade Y
-                    </p>
-                    <span>
-                        <a href="/detalhes">
-                            Saiba mais
-                        </a>
-                    </span>
-                </div>
-                <div className="card-info">
-                    <p>
-                        Evento A
-                    </p>
-                    <p>
-                        Universidade A
-                    </p>
-                    <span>
-                        <a href="/detalhes">
-                            Saiba mais
-                        </a>
-                    </span>
-                </div>
-                <div className="card-info">
-                    <p>
-                        Evento B
-                    </p>
-                    <p>
-                        Empresa B
-                    </p>
-                    <span>
-                        <a href="/detalhes">
-                            Saiba mais
-                        </a>
-                    </span>
-                </div>
-                <div className="card-info">
-                    <p>
-                        Evento K
-                    </p>
-                    <p>
-                        Universidade K
-                    </p>
-                    <span>
-                        <a href="/detalhes">
-                            Saiba mais
-                        </a>
-                    </span>
-                </div>
+                {events?.map(x => (
+                    <div className="card-info" key={x.id}>
+                        <p>
+                            {x?.nameEvent}
+                        </p>
+                        <p>
+                            {x?.name}
+                        </p>
+                        <span>
+                            <a href="/detalhes">
+                                Saiba mais
+                            </a>
+                        </span>
+                    </div>
+                ))}
             </div>
         </div>
     )
