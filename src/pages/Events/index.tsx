@@ -27,7 +27,7 @@ export default function Events() {
                             {x?.name}
                         </p>
                         <span>
-                            <a href="/detalhes">
+                            <a href={`/detalhes/${x.id}`}>
                                 Saiba mais
                             </a>
                         </span>

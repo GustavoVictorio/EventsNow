@@ -9,7 +9,7 @@ export default function Routess() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/eventos" element={<Events />} />
-                <Route path="/detalhes" element={<Details />} />
+                <Route path="/detalhes/:eventId" element={<Details />} />
             </Routes>
         </BrowserRouter>
     )

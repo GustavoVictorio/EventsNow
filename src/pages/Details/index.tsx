@@ -1,32 +1,43 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { Event } from "types/event";
+import { BASE_URL } from "util/request";
+import { useParams } from "react-router-dom";
 import "./styles.css";
 
 export default function Details() {
+
+    const { eventId } = useParams();
+
+    const [events, setEvents] = useState<Event>();
+
+    useEffect(() => {
+        axios.get(`${BASE_URL}/events/${eventId}`).then(response => {
+            setEvents(response.data);
+
+        });
+    }, []);
+
     return (
         <div className="container-d">
             <div className="content-d">
-                <h1>Evento X</h1>
+                <h1>{events?.nameEvent}</h1>
                 <div className="info-d">
-                    <p><span>Realizado por: </span>Empresa A</p>
-                    <p><span>Local: </span>Rua A</p>
-                    <p><span>Data: </span>06/12/2021</p>
-                    <p><span>Hora: </span>08:00</p>
-                    <p><span>Traje: </span>Casual</p>
-                    <p><span>Estacionamento: </span>R$: 30,00</p>
+                    <p><span>Realizado por: </span>{events?.name}</p>
+                    <p><span>Local: </span>{events?.locale}</p>
+                    <p><span>Data: </span>{events?.date}</p>
+                    <p><span>Hora: </span>{events?.hour}</p>
+                    <p><span>Traje: </span>{events?.costume}</p>
+                    <p><span>Estacionamento: </span>R$: {events?.parking}</p>
                 </div>
                 <div className="detail-d">
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        It has survived not only five centuries, but also the leap into electronic typesetting,
-                        remaining essentially unchanged.
-                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        {events?.description}
                     </p>
                 </div>
                 <div className="buy">
                     <div className="value">
-                        R$: 20.00
+                        R$: {events?.price}
                     </div>
                     <span> - </span>
                     <input type="text" placeholder="1" />
